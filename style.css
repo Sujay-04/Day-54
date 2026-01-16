@@ -16,19 +16,8 @@ main{
     align-items: center;
     justify-content: center;
     gap: 70px;
+    
 }
-/* @keyframes bgcolor{
-    from{
-        background-color: aliceblue;
-        scale: 1;
-        
-    }
-    to{
-        background-color: red;
-        scale: 0.5;
-        border-radius: 50px;
-    }
-} */
 
 @property --rotate{
     syntax: "<angle>";
@@ -76,4 +65,24 @@ main{
 }
 #box img{
 height: 100%;width: 100%;
+}
+
+
+
+@media (max-width: 900px) {
+
+  #box {
+    max-width: 90%;
+    padding-inline: 12px;
+  }
+
+  
+  main {
+    flex-direction: column;
+    padding: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    overflow:auto;
+  }
+
 }
